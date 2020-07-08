@@ -28,6 +28,10 @@ ul {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
 // img {
 //   width: 100%;
 // }
@@ -131,5 +135,43 @@ ul {
 
   .btn {
     margin-top: 2rem;
+  }
+}
+
+// HOME CARDS 1
+.home-cards {
+  display: grid;
+  grid-gap: 2rem;
+  //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    display: inline-block;
+    padding-top: 1rem;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    @include transition(0.2s);
+
+    i {
+      @include transition(0.3s);
+    }
+
+    &:hover {
+      border-bottom: 2px solid #0067b8;
+
+      i {
+        margin-left: 1rem;
+      }
+    }
   }
 }
